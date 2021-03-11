@@ -1,1 +1,1 @@
-db.voos.find({ "aeroportoDestino.pais": { $nin: ["ESTADOS UNIDOS"] } }).count();
+db.voos.countDocuments({ "aeroportoDestino.pais": { $nin: ["ESTADOS UNIDOS"] } });
